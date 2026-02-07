@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Julius_Sans_One, Simonetta } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 
 const playfair = Julius_Sans_One({
@@ -27,7 +28,7 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "Suprema Semijoias | Semijoias Exclusivas em Belém do Pará",
+    default: "Suprema Semijoias | Semijoias Exclusivas em Belém",
     template: "%s | Suprema Semijoias",
   },
   icons: {
@@ -110,6 +111,20 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <body className={`${playfair.variable} ${lora.variable} antialiased`}>
+        {/* Google tag (gtag.js) */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-FP5EGYF5B7"
+          strategy="afterInteractive"
+        />
+        <Script id="ga4-gtag-init" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-FP5EGYF5B7');
+          `}
+        </Script>
+
         <a
           href="#conteudo"
           className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:rounded-full focus:bg-[#c48d45] focus:px-4 focus:py-2 focus:font-body focus:text-sm focus:font-semibold focus:text-[#ffffff] focus:shadow-lg focus:shadow-[#c48d45]/30 focus:outline-none"
