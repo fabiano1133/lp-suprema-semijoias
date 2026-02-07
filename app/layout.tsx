@@ -37,6 +37,9 @@ export const metadata: Metadata = {
     ],
     apple: [{ url: "/apple-icon.png", type: "image/png" }],
   },
+  verification: {
+    google: "3SRA-1kVbbJUM_4vkqoEaEAbrLLyNJ3aOXyfxcujjpw",
+  },
   description:
     "Semijoias exclusivas e sofisticadas em Belém do Pará. Colares, brincos, pulseiras e anéis com qualidade superior, atendimento personalizado via WhatsApp e loja física no Umarizal.",
   keywords: [
