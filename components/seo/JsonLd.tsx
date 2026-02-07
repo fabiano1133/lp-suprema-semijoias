@@ -1,7 +1,7 @@
 import * as React from "react";
 
 const siteUrl =
-  process.env.NEXT_PUBLIC_SITE_URL ?? "https://supremasemijoias.com.br";
+  process.env.NEXT_PUBLIC_SITE_URL ?? "https://suprema-semijoias.sophos-tech-hub.com.br";
 const whatsappUrl =
   process.env.NEXT_PUBLIC_WHATSAPP_URL ?? "https://wa.me/5591985161605";
 

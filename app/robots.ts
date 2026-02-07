@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 
 const siteUrl =
-  process.env.NEXT_PUBLIC_SITE_URL ?? "https://supremasemijoias.com.br";
+  process.env.NEXT_PUBLIC_SITE_URL ?? "https://suprema-semijoias.sophos-tech-hub.com.br";
 
 export default function robots(): MetadataRoute.Robots {
   return {

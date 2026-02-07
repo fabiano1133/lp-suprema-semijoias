@@ -16,7 +16,7 @@ const lora = Simonetta({
   weight: ["400"],
 });
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://supremasemijoias.com.br";
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://suprema-semijoias.sophos-tech-hub.com.br";
 
 export const viewport: Viewport = {
   width: "device-width",
