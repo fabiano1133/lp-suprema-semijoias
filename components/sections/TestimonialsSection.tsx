@@ -15,8 +15,7 @@ function TestimonialCard({
 }) {
   return (
     <Reveal preset="fade-up" delayMs={delayMs}>
-      <article className="group relative flex h-full flex-col overflow-hidden rounded-3xl border border-[#d3d1b0]/60 bg-[#ffffff]/75 p-6 shadow-lg shadow-[#d3d1b0]/25 ring-1 ring-[#ffffff]/50 backdrop-blur-md transition-all duration-500 ease-out hover:-translate-y-1 hover:border-[#d3d1b0]/80 hover:shadow-xl hover:shadow-[#d3d1b0]/40 hover:ring-[#ffffff]/70 sm:p-8" itemScope itemType="https://schema.org/Review">
-        <meta itemProp="itemReviewed" content="Suprema Semijoias" />
+      <article className="group relative flex h-full flex-col overflow-hidden rounded-3xl border border-[#d3d1b0]/60 bg-[#ffffff]/75 p-6 shadow-lg shadow-[#d3d1b0]/25 ring-1 ring-[#ffffff]/50 backdrop-blur-md transition-all duration-500 ease-out hover:-translate-y-1 hover:border-[#d3d1b0]/80 hover:shadow-xl hover:shadow-[#d3d1b0]/40 hover:ring-[#ffffff]/70 sm:p-8">
         {/* Faixa decorativa lateral */}
         <div aria-hidden className="absolute left-0 top-0 h-full w-1 bg-linear-to-b from-[#c48d45]/40 via-[#c48d45]/25 to-transparent opacity-80 transition-opacity duration-500 group-hover:opacity-100" />
 
@@ -26,14 +25,14 @@ function TestimonialCard({
             <Quote className="h-6 w-6 text-[#c48d45]/70 transition-colors duration-500 group-hover:text-[#c48d45]" strokeWidth={1.25} aria-hidden />
           </div>
 
-          <blockquote className="mt-5 flex-1 text-base leading-loose text-[#c48d45] sm:text-lg sm:leading-loose" itemProp="reviewBody">
+          <blockquote className="mt-5 flex-1 text-base leading-loose text-[#c48d45] sm:text-lg sm:leading-loose">
             {quote}
           </blockquote>
 
           {/* Separador sutil + autoria */}
           <div className="mt-6 border-t border-[#d3d1b0]/50 pt-5">
             <p className="font-body text-sm font-medium italic tracking-wide text-[#c48d45]/95 sm:text-base">
-              — <cite itemProp="author" itemScope itemType="https://schema.org/Person"><span itemProp="name">{author}</span></cite>
+              — <cite>{author}</cite>
             </p>
           </div>
         </div>

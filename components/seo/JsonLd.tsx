@@ -39,26 +39,6 @@ const localBusinessSchema = {
   priceRange: "$$",
   currenciesAccepted: "BRL",
   paymentAccepted: "Dinheiro, Cartão, PIX",
-  review: [
-    {
-      "@type": "Review",
-      author: { "@type": "Person", name: "Mariana S." },
-      reviewBody:
-        "Fiquei encantada com a qualidade das semijoias! As peças são lindas, delicadas e combinam com tudo. O atendimento pelo WhatsApp foi maravilhoso, super atencioso. Com certeza voltarei a comprar.",
-    },
-    {
-      "@type": "Review",
-      author: { "@type": "Person", name: "Renata L." },
-      reviewBody:
-        "Comprei um colar para usar no dia a dia e me surpreendi com o acabamento e o brilho. Dá para perceber o cuidado em cada detalhe. Além disso, a entrega foi rápida e a embalagem é simplesmente perfeita.",
-    },
-    {
-      "@type": "Review",
-      author: { "@type": "Person", name: "Camila A." },
-      reviewBody:
-        "A Suprema Semijoias virou minha loja favorita! Já comprei brincos e pulseiras e todas as peças são elegantes e confortáveis de usar. Atendimento impecável e muita confiança na procedência.",
-    },
-  ],
 };
 
 const faqSchema = {
